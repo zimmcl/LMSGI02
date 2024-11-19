@@ -1,0 +1,101 @@
+@font-face {
+    font-family: 'AureaFont';
+    /* Nombre para referenciar la fuente */
+    src: url('../fonts/medieval_sharp/MedievalSharp.ttf') format('truetype'),
+        url('../fonts/medieval_sharp/MedievalSharp-Bold.ttf') format('truetype'),
+        url('../fonts/medieval_sharp/MedievalSharp-BoldOblique.ttf') format('truetype'),
+        url('../fonts/medieval_sharp/MedievalSharp-Oblique.ttf') format('truetype');
+    /* Formato TTF */
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Reset básico */
+body,
+ul,
+li,
+a {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+/* Estilos del nav */
+.navbar {
+    font-family: 'AureaFont';
+    display: flex;
+    height: 7rem;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    /* Negro con 50% de opacidad */
+    color: #fff;
+    z-index: 1;
+}
+
+.navbar-logo {
+    flex: 1;
+}
+
+.nav-logo {
+    max-height: 100px;
+    /* Ajusta el tamaño del logo */
+}
+
+.navbar-links {
+    display: flex;
+    flex: 10;
+    justify-content: center;
+    gap: 30px;
+    /* Espaciado entre los links */
+}
+
+.navbar-links li {
+    display: inline;
+}
+
+.navbar-links a {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navbar-links a:hover {
+    color: #f0a500;
+    /* Color al pasar el cursor */
+}
+
+.index {
+    position: relative; /* Necesario para posicionar el contenido encima del video */
+    width: 100%;
+    height: 100vh; /* El video cubrirá toda la pantalla */
+    overflow: hidden; /* Asegura que el contenido no se desborde fuera del contenedor */
+}
+
+#video_background {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+  }
+  
+  .index-content {
+    position: relative;
+    z-index: 1;
+    color: white;
+    text-align: center;
+    font-size: 2em;
+    padding: 50px;
+  }
+
+
+
+  
