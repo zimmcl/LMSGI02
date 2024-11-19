@@ -1,1 +1,220 @@
-<h1>Github pages</h1>
+<!--
+    Archivo: index.html
+    Descripción: Página de inicio. Contiene la presentación de la persona.
+    
+    Autor: Ezequiel Jose Zimmel Ceccon
+    Fecha de creación: 12/10/2024
+-->
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Incluye Bootstrap CSS desde CDN -->
+    <link rel="stylesheet" href="./wwwroot/styles/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="./wwwroot/styles/bootstrap/bootstrap-icons-1.11.3/font/bootstrap-icons.css">
+
+    <!-- Incluye tu CSS personalizado después de Bootstrap para que no sobrescriba estilos de Bootstrap -->
+    <link rel="stylesheet" href="./wwwroot/styles/customCSS.css">
+
+    <!-- Script de tu JavaScript personalizado -->
+    <script src="./wwwroot/scripts/customJS.js" defer></script>
+
+    <!-- Incluye Bootstrap JS y Popper.js desde CDN -->
+    <script src="./wwwroot/scripts/bootstrap/bootstrap.bundle.min.js" defer></script>
+
+
+    <style>
+        .product-card {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            margin-right: -10px;
+            border: 1px solid rgba(207, 142, 142, 0.8);
+            padding: 5px;
+            border-radius: 5px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            background-color: rgba(207, 142, 142, 0.4);
+        }
+
+        .product-card .image-container {
+            flex: 1;
+            margin-right: 5px;
+        }
+
+        .product-card:hover {
+            transform: scale(1.02);
+            box-shadow: 0 4px 8px rgba(207, 142, 142, 0.2);
+            cursor: pointer;
+        }
+
+        .product-card img {
+            height: 100px;
+            width: 100px;
+            object-fit: cover;
+        }
+
+        .product-card .card-body {
+            flex: 2;
+        }
+
+        .product-card .card-text {
+            font-size: 26px;
+        }
+    </style>
+
+    <title>Aurea</title>
+</head>
+
+<body>
+
+    <div id="navbar"></div>
+
+    <video autoplay muted loop preload id="video_background" type="video/mp4">
+        <source src="./wwwroot/media/videos/video_cerveza.mp4" type="video/mp4">
+        Tu navegador no soporta el video.
+    </video>
+
+    <div class="index-content">
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="d-flex">
+                        <img src="./wwwroot/media/images/slider1.png" class="d-block w-50" alt="Imagen 1">
+                        <img src="./wwwroot/media/images/slider2.png" class="d-block w-50" alt="Imagen 2">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>First slide label</h5>
+                            <p>Some representative placeholder content for the first slide.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="d-flex">
+                        <img src="./wwwroot/media/images/slider1.png" class="d-block w-50" alt="Imagen 1">
+                        <img src="./wwwroot/media/images/slider3.png" class="d-block w-50" alt="Imagen 3">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Second slide label</h5>
+                            <p>Some representative placeholder content for the first slide.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="d-flex">
+                        <img src="./wwwroot/media/images/slider4.png" class="d-block w-50" alt="Imagen 2">
+                        <img src="./wwwroot/media/images/slider3.png" class="d-block w-50" alt="Imagen 3">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Third slide label</h5>
+                            <p>Some representative placeholder content for the first slide.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="d-flex">
+                        <img src="./wwwroot/media/images/slider4.png" class="d-block w-50" alt="Imagen 2">
+                        <img src="./wwwroot/media/images/slider1.png" class="d-block w-50" alt="Imagen 3">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Third slide label</h5>
+                            <p>Some representative placeholder content for the first slide.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+
+        <div class="mt-5">
+            <div class="row">
+                <!-- Columna 1: Video -->
+                <div class="col-md-7">
+                    <h2>Como lo hacemos</h4>
+                    <video muted autoplay loop preload width="70%">
+                        <source src="./wwwroot/media/videos/Como_lo_hacemos.mp4" type="video/mp4">
+                        Tu navegador no soporta el elemento de video.
+                    </video>
+                </div>
+
+                <!-- Columna 2: Productos -->
+                <div class="col-md-4">
+                    <!-- Fila 1 -->
+                    <div class="row">
+                        <h2>Lo más vendido...</h4>
+                        <!-- Tarjeta Producto 1 -->
+                        <div class="col-md-6">
+                            <div class="product-card">
+                                <div class="image-container">
+                                    <img src="./wwwroot/media/images/stout_beer.png" alt="Producto 1">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Aurea Stout x4</h5>
+                                    <p class="card-text">Precio: 3.50 €</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Tarjeta Producto 2 -->
+                        <div class="col-md-6">
+                            <div class="product-card">
+                                <div class="image-container">
+                                    <img src="./wwwroot/media/images/ipa_beer.png" alt="Producto 2" class="img-fluid">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Aurea IPA x8</h5>
+                                    <p class="card-text">Precio: 5.85 €</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Fila 2 -->
+                    <div class="row">
+                        <!-- Tarjeta Producto 3 -->
+                        <div class="col-md-6">
+                            <div class="product-card">
+                                <div class="image-container">
+                                    <img src="./wwwroot/media/images/zero_beer.png" alt="Producto 3" class="img-fluid">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Aurea Zero x6</h5>
+                                    <p class="card-text">Precio: 5.50 €</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Tarjeta Producto 4 -->
+                        <div class="col-md-6">
+                            <div class="product-card">
+                                <div class="image-container">
+                                    <img src="./wwwroot/media/images/radler_beer.png" alt="Producto 4"
+                                        class="img-fluid">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Aurea Radler x6</h5>
+                                    <p class="card-text">Precio: 5.00 €</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="footer"></div>
+
+</body>
+
+</html>

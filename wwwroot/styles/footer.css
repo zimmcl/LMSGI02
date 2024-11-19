@@ -1,0 +1,82 @@
+/* =============== Estilos del pie de página =============== */
+footer {
+    font-family: 'AureaFont';
+    background-color: blanchedalmond;
+    color: grey;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-left,
+.footer-center,
+.footer-right {
+    flex: 1;
+    text-align: center;
+}
+
+.footer-left {
+    text-align: left;
+}
+
+.footer-right {
+    text-align: right;
+}
+
+.footer-center p {
+    margin: 35px 0 -20px 0;             
+    color: #666;                    
+}
+
+.footer-logo {
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+.social-media {
+    display: flex;
+    gap: 15px;
+}
+
+.social-media a {
+    color: #333;
+    font-size: 24px;
+    transition: color 0.3s; 
+}
+
+.social-media a:hover {
+    color: #007bff;                
+}
+
+
+form input {
+    padding: 5px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+form button {
+    padding: 5px 10px;
+    border: none;
+    background-color: #f4a261;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #e76f51;
+}
+
+/* =============== Fin de estilos del pie de página =============== */
