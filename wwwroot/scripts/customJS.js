@@ -1,6 +1,6 @@
 // Configura la base URL automáticamente
 const baseURL = window.location.hostname.includes("github.io")
-    ? "/LMSGI02"
+    ? "/"
     : "http://127.0.0.1:50000";
 
 const baseElement = document.querySelector("base");
