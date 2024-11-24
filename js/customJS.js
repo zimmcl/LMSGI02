@@ -34,6 +34,6 @@ function loadHTML(file, elementId) {
 
 // Inserta el contenido en los elementos correspondientes cuando el DOM está listo
 document.addEventListener("DOMContentLoaded", () => {
-    loadHTML(`${baseURL}/htmlBase/nav.html`, "navbar");
-    loadHTML(`${baseURL}/htmlBase/footer.html`, "footer");
+    loadHTML(`${baseURL}/pages/htmlBase/nav.html`, "navbar");
+    loadHTML(`${baseURL}/pages/htmlBase/footer.html`, "footer");
 });
