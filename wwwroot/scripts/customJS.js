@@ -1,31 +1,24 @@
-// Cargar el archivo nav.html en el contenedor
-fetch('base/nav.html')
-    .then(response => {
-        if (!response.ok) {
-            throw new Error('Error al cargar el nav.html');
-        }
-        return response.text();
-    })
-    .then(data => {
-        document.getElementById('navbar').innerHTML = data;
-        // Llamar a la función para ocultar el elemento correspondiente
-        hideCurrentNavItem();
-    })
-    .catch(error => {
-        console.error('Error:', error);
-    });
+// Configura la base URL automáticamente
+const baseURL = window.location.hostname.includes("github.io")
+    ? "/LMSGI02"
+    : "http://127.0.0.1:50000";
 
-// Cargar el archivo footer.html en el contenedor
-fetch('base/footer.html')
-    .then(response => {
-        if (!response.ok) {
-            throw new Error('Error al cargar el footer.html');
-        }
-        return response.text();
-    })
-    .then(data => {
-        document.getElementById('footer').innerHTML = data;
-    })
-    .catch(error => {
-        console.error('Error:', error);
-    });
+document.querySelector("base").setAttribute("href", baseURL);
+
+function loadHTML(file, elementId) {
+    fetch(file)
+        .then(response => {
+            if (!response.ok) throw new Error(`Error al cargar ${file}`);
+            return response.text();
+        })
+        .then(data => {
+            document.getElementById(elementId).innerHTML = data;
+        })
+        .catch(error => console.error(error));
+}
+
+// Inserta el contenido en los elementos correspondientes
+document.addEventListener("DOMContentLoaded", () => {
+    loadHTML(`${baseURL}/base/nav.html`, "navbar");
+    loadHTML(`${baseURL}/base/footer.html`, "footer");
+});
