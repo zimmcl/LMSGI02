@@ -1,0 +1,81 @@
+<!--
+    Archivo: experiencia.html
+    Descripción: Contiene información de la experiencia laboral de la persona.
+    
+    Autor: Ezequiel Jose Zimmel Ceccon
+    Fecha de creación: 12/10/2024
+-->
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./wwwroot/styles/customCSS.css">
+    <link rel="stylesheet" href="./wwwroot/styles/Contacto.css">
+    <script src="./wwwroot/scripts/customJS.js" defer></script>
+    <title>Experiencia</title>
+</head>
+
+<body>
+    <main>
+        <!-- Contenedor para el menú de navegación -->
+        <div id="navbar"></div>
+        
+        <div id="beer-form">
+            <h1>¡Únete a nuestra comunidad cervecera!</h1>
+            <p>Completa este formulario para recibir información sobre eventos, promociones y novedades cerveceras.</p>
+            
+            <form action="/submit" method="post">
+                <!-- Nombre -->
+                <div class="form-group">
+                    <label for="name">Nombre completo</label>
+                    <input type="text" id="name" name="name" placeholder="Ingresa tu nombre" required>
+                </div>
+        
+                <!-- Correo electrónico -->
+                <div class="form-group">
+                    <label for="email">Correo electrónico</label>
+                    <input type="email" id="email" name="email" placeholder="Ingresa tu correo" required>
+                </div>
+        
+                <!-- Número de contacto -->
+                <div class="form-group">
+                    <label for="phone">Número de teléfono</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Ingresa tu número" required>
+                </div>
+        
+                <!-- Intereses -->
+                <div class="form-group">
+                    <label for="interests">¿Qué te interesa más?</label>
+                    <select id="interests" name="interests" required>
+                        <option value="" disabled selected>Selecciona una opción</option>
+                        <option value="tasting">Catas de cerveza</option>
+                        <option value="brewing">Aprender a hacer cerveza</option>
+                        <option value="events">Eventos cerveceros</option>
+                    </select>
+                </div>
+        
+                <!-- Notificaciones -->
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox" name="newsletter" checked>
+                        Quiero recibir novedades y promociones
+                    </label>
+                </div>
+        
+                <!-- Botón de envío -->
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+
+    </main>
+
+    <!-- Contenedor para el footer -->
+    <div id="footer"></div> 
+
+</body>
+
+</html>

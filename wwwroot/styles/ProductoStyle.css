@@ -1,0 +1,113 @@
+/* Estilo general */
+body, h1, h2, h3, p, ul {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+main {
+    padding: 1rem;
+    max-width: 800px;
+    margin: auto;
+}
+
+/* Sección del encabezado del producto */
+.product-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.product-thumbnail {
+    width: 150px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.product-info h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.product-info p {
+    color: #555;
+}
+
+/* Galería de imágenes */
+.product-gallery {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.product-gallery img {
+    width: 200px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Detalles del producto */
+.product-details {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.product-description, .product-ingredients {
+    flex: 1;
+}
+
+.product-ingredients ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.product-ingredients ul li::before {
+    content: "• ";
+    color: #007bff;
+}
+
+/* Botón añadir al carrito */
+.product-action {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.add-to-cart {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.add-to-cart:hover {
+    background-color: #0056b3;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #007bff;
+    color: white;
+}

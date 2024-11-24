@@ -1,4 +1,14 @@
 /* Contenedor principal */
+
+body {
+    background-image: url('/wwwroot/media/images/background_1.jpg'); /* Cambia la ruta por el archivo de tu imagen */
+    background-size: cover; /* Ajusta la imagen para que cubra todo el fondo */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-position: center; /* Centra la imagen */
+    z-index: 1;
+    margin: 0; /* Asegura que el fondo cubra toda la página */
+}
+
 #beer-form {
     max-width: 600px;
     margin: 0 auto;
@@ -31,7 +41,7 @@
 
 /* Etiquetas */
 .form-group label {
-    font-size: 1em;
+    font-size: 1.2em;
     color: #34495e;
     display: block;
     margin-bottom: 5px;
@@ -69,7 +79,7 @@ button {
 
 button:hover {
     background-color: #1abc9c;
-    transform: scale(1.05);
+    transform: scale(1.25);
 }
 
 /* Checkbox */

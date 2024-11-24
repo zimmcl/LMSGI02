@@ -15,21 +15,6 @@ fetch('base/nav.html')
         console.error('Error:', error);
     });
 
-function hideCurrentNavItem() {
-    // Obtener la URL de la página actual
-    const currentPage = window.location.pathname.split('/').pop();
-
-    // Seleccionar todos los elementos de navegación
-    const navItems = document.querySelectorAll('.nav-item');
-
-    // Recorrer los elementos de navegación y ocultar el correspondiente
-    navItems.forEach(item => {
-        if (item.getAttribute('data-page') === currentPage) {
-            item.hidden = true; // Ocultar el elemento correspondiente
-        }
-    });
-}
-
 // Cargar el archivo footer.html en el contenedor
 fetch('base/footer.html')
     .then(response => {
