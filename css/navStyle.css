@@ -17,7 +17,12 @@
 
 .nav-logo {
     max-height: 80px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
     /* Ajusta el tamaño del logo */
+}
+
+.nav-logo:hover {
+    transform: scale(1.25);
 }
 
 .navbar-links {
@@ -42,5 +47,4 @@
 
 .navbar-links a:hover {
     color: #f0a500;
-    /* Color al pasar el cursor */
 }

@@ -15,7 +15,7 @@ footer {
     justify-content: space-between; /* Espacio entre las secciones */
     align-items: center; /* Centra verticalmente el contenido */
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 30px;
 }
 
 .footer-left,
@@ -41,7 +41,7 @@ footer {
 }
 
 .footer-center p {
-    margin: 35px 0 -20px 0;             
+    margin: 15px 0 -20px 35px;             
     color: #666;                    
 }
 
@@ -52,7 +52,7 @@ footer {
 
 .social-media {
     display: flex;
-    gap: 15px;
+    gap: 25px;
 }
 
 .social-media a {

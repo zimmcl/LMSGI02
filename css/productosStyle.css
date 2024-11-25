@@ -14,7 +14,7 @@ h1 {
 
 .product-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /*4 productos por fila*/
+    grid-template-columns: repeat(4, 1fr); /*4 productos por fila*/
     gap: 1rem;
     margin: 2rem;
 }
@@ -30,9 +30,8 @@ h1 {
 }
 
 .product-card img {
-    width: 100%;
-    height: auto;
-    max-width: 150px;
+    height: 100px;
+    max-width: 100px;
     margin: 0 auto 1rem;
 }
 
@@ -56,4 +55,58 @@ h1 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Añade un efecto al pasar el ratón */
     transform: translateY(-2px); /* Eleva ligeramente el artículo */
     transition: 0.3s ease; /* Transición suave */
+}
+
+/* Indicador de stock */
+.stock-indicator {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    padding: 0.2rem 0.5rem;
+    font-size: 0.8rem;
+    font-weight: bold;
+    border-radius: 3px;
+    color: white;
+    text-transform: uppercase;
+}
+
+/* Tarjeta de producto general */
+.product-card {
+    position: relative; /* Necesario para posicionar el indicador */
+    background-color: white;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    padding: 1rem;
+    transition: 0.3s ease; /* Transición para cambios de estilo */
+}
+
+/* En stock */
+.product-card[data-stock="true"] {
+    border-color: green;
+}
+
+.product-card[data-stock="true"] .stock-indicator {
+    background-color: green;
+}
+
+/* Agotado */
+.product-card[data-stock="false"] {
+    border-color: red;
+}
+
+.product-card[data-stock="false"] img {
+    filter: blur(2px); /* Difumina la imagen */
+}
+
+.product-card[data-stock="false"] .stock-indicator {
+    background-color: red;
+}
+
+/* Hover para en stock */
+.product-link:hover .product-card[data-stock="true"] {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Eleva ligeramente solo los en stock */
+    transform: translateY(-2px);
 }
