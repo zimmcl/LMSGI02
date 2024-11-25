@@ -14,15 +14,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aurea</title>
+    <link rel="stylesheet" href="css/customCSS.css">
     <link rel="stylesheet" href="css/indexStyle.css">
+    <link rel="stylesheet" href="css/navStyle.css">
+    <link rel="stylesheet" href="css/footerStyle.css">
     <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
-
-    <script type="text/javascript" src="js/customJS.js"></script>
+    <link rel="stylesheet" href="css/bootstrap/bootstrap-icons-1.11.3/font/bootstrap-icons.css">
 </head>
 
 <body>
 
-    <div id="navbar"></div>
+    <nav class="navbar">
+        <div class="navbar-logo">
+            <a href="../../index.html">
+                <img src="../../img/aurea_logo.png" alt="Aurea Logo" class="nav-logo">
+            </a>
+        </div>
+        <ul class="navbar-links">
+            <li><a href="../../pages/cultura.html">Cultura Cervecera</a></li>
+            <li><a href="../../pages/productos.html">Productos</a></li>
+            <li><a href="../../pages/prensa.html">Prensa</a></li>
+            <li><a href="../../pages/contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
 
     <video autoplay muted loop preload id="video_background" type="video/mp4">
         <source src="img/video_cerveza.mp4" type="video/mp4">
@@ -163,7 +177,35 @@
 
     </div>
 
-    <div id="footer"></div>
+    <footer>
+        <div class="footer-container">
+            <!-- Sección Izquierda -->
+            <div class="footer-left">
+                <img src="../../img/rey1_footer.png" alt="Rey" class="footer-logo">
+                <p>La cerveza del Rey.</p>
+            </div>
+
+            <!-- Sección Central -->
+            <div class="footer-center">
+                <ul class="social-media">
+                    <li><a href="https://www.facebook.com/" target="_blank"><i class="bi bi-facebook"></i></a></li>
+                    <li><a href="https://x.com/?lang=es" target="_blank"><i class="bi bi-twitter-x"></i></a></li>
+                    <li><a href="https://www.instagram.com/" target="_blank"><i class="bi bi-instagram"></i></a></li>
+                </ul>
+                <p>&copy; 2024 Aurea. Todos los derechos reservados.</p>
+            </div>
+
+            <!-- Sección Derecha -->
+            <div class="footer-right">
+                <h2>Suscríbete</h2>
+                <p>Recibe nuestras novedades y promociones.</p>
+                <form>
+                    <input type="email" placeholder="Tu correo electrónico">
+                    <button type="submit">Suscribirse</button>
+                </form>
+            </div>
+        </div>
+    </footer>
 
 </body>
 
