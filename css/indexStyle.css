@@ -16,14 +16,20 @@
     z-index: -1;
   }
   
-  .index-content {
+.index-content {
     position: relative;
     z-index: 1;
     color: white;
     text-align: center;
-    font-size: 2em;
+    font-size: 1.4em;
     padding: 50px;
   }
+
+.product-link {
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    color: inherit; /* Mantiene el color original del texto */
+    display: block; /* Asegura que el enlace abarque todo el contenido del artículo */
+}
 
 .product-card {
     display: flex;
@@ -58,6 +64,10 @@
     flex: 2;
 }
 
+.product-card .card-title {
+    font-size: 1rem;
+}
+
 .product-card .card-text {
-    font-size: 26px;
+    font-size: 0.9rem;
 }
