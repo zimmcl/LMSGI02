@@ -12,8 +12,8 @@ footer {
 
 .footer-container {
     display: flex;
-    justify-content: space-between; /* Espacio entre las secciones */
-    align-items: center; /* Centra verticalmente el contenido */
+    justify-content: space-between; 
+    align-items: center;
     margin: 0 auto;
     padding: 0 30px;
 }
@@ -27,9 +27,9 @@ footer {
 .footer-center {
     flex: 1;
     text-align: center;
-    display: flex; /* Esto permite alinear elementos en esta sección */
+    display: flex; 
     flex-direction: column; /* Para organizar elementos verticalmente */
-    align-items: center; /* Centra los elementos horizontalmente */
+    align-items: center; 
 }
 
 .footer-left {
@@ -65,7 +65,6 @@ footer {
     color: #f0a500;               
 }
 
-
 form input {
     padding: 5px;
     margin-right: 10px;
@@ -85,5 +84,3 @@ form button {
 form button:hover {
     background-color: #e76f51;
 }
-
-/* =============== Fin de estilos del pie de página =============== */

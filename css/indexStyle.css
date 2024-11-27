@@ -26,7 +26,7 @@
   }
 
 .product-link {
-    text-decoration: none; /* Elimina el subrayado del enlace */
+    text-decoration: none;
     color: inherit; /* Mantiene el color original del texto */
     display: block; /* Asegura que el enlace abarque todo el contenido del artículo */
 }

@@ -8,35 +8,8 @@ body {
     margin: 0; /* Asegura que el fondo cubra toda la página */
 }
 
-#header {
-    display: flex;
-    align-items: center;
-    padding: 20px;
-    background-color: #f4f4f4;
-    border-bottom: 2px solid #ccc;
-}
-
-/* Estilo para la cita */
-.quote {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 1.3em;
-    font-style: italic;
-    color: #555;
-    flex: 1; /* Ocupa el espacio restante si es necesario */
-}
-
-/* Estilo para el título */
-.title {
-    font-family: 'AureaFont';
-    font-size: 1.6rem;
-    font-weight: bold;
-    color: #333;
-    margin-right: 50px;
-}
-
-/* Contenedor principal del bloque de historia */
 #history {
-    margin: 0 10rem 0 10rem;
+    margin: 0.4rem 10rem 0 10rem;
     padding: 20px;
     background-color: #fafafa;
 }
@@ -51,28 +24,22 @@ body {
 
 .row h2
 {
+    font-family: 'AureaFont';
     font-size: 1.4rem;
 }
 
-/* Estilo para imágenes */
 .image {
-    flex: 0 0 20%; /* Ocupa un máximo del 40% del ancho del contenedor */
-    height: 200px; /* Asegura que no exceda el ancho del contenedor padre */
+    flex: 0 0 20%; /* Ocupa un máximo del 20% del ancho del contenedor */
+    height: 200px; 
     border-radius: 20px;
     object-fit: cover; /* Recorta la imagen manteniendo sus proporciones */
     margin: 0 20px 20px; /* Espaciado entre la imagen y el texto */
 }
 
-/* Estilo para textos */
 .text {
-    flex: 1; /* Ocupa el resto del espacio disponible */
+    font-size: 16px;
+    flex: 1; 
     padding: 0 10px; /* Espaciado interno para el texto */
-}
-
-.text h2 {
-    font-size: 1.2em;
-    margin-bottom: 10px;
-    color: #333;
 }
 
 .text p {

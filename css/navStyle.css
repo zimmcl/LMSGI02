@@ -1,4 +1,3 @@
-/* Estilos del nav */
 .navbar {
     font-family: 'AureaFont';
     display: flex;
@@ -18,7 +17,6 @@
 .nav-logo {
     max-height: 80px;
     transition: background-color 0.3s ease, transform 0.2s ease;
-    /* Ajusta el tamaño del logo */
 }
 
 .nav-logo:hover {
@@ -30,11 +28,6 @@
     flex: 10;
     justify-content: center;
     gap: 30px;
-    /* Espaciado entre los links */
-}
-
-.navbar-links li {
-    display: inline;
 }
 
 .navbar-links a {
@@ -47,4 +40,24 @@
 
 .navbar-links a:hover {
     color: #f0a500;
+}
+
+.navbar-download {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.download-icon {
+    margin-right: 20px;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.download-icon:hover {
+    transform: scale(1.2);
+    opacity: 0.8;
 }

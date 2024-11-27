@@ -1,9 +1,9 @@
 <!--
     Archivo: productos.html
-    Descripción: Contiene información de los pasatiempos y aficiones de la persona
+    Descripción: Contiene información sobre los productos que se ofrecen
     
     Autor: Ezequiel Jose Zimmel Ceccon
-    Fecha de creación: 12/10/2024
+    Fecha de creación: 25/11/2024
 -->
 
 <!DOCTYPE html>
@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="../css/footerStyle.css">
     <link rel="stylesheet" href="../css/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="../css/bootstrap/bootstrap-icons-1.11.3/font/bootstrap-icons.css">
+    <script src="../js/custom.js" defer></script>
     <title>Productos</title>
 </head>
 
@@ -39,18 +40,19 @@
 
     <div id="header">
         <h1 class="title">Nuestros productos</h1>
+        <blockquote class="quote">"La cerveza es la bebida más civilizada del mundo." - Ernest Hemingway</blockquote>
     </div>
 
     <section class="product-grid">
-        <a href="productoA.html" class="product-link">
+        <a href="productoA.html" class="product-link" onclick="setStockValue('true')">
             <article class="product-card" data-stock="true">
                 <span class="stock-indicator">En stock</span>
                 <img src="../media/img/stout_beer.png" alt="Producto 1">
                 <h2>Aurea Stout</h2>
-                <p>Descripción breve del producto 1.</p>
+                <p>Con su cuerpo robusto y su espuma cremosa.</p>
             </article>
         </a>
-        <a href="productoTemplate.html" class="product-link">
+        <a href="productoTemplate.html" class="product-link" onclick="setStockValue('false')">
             <article class="product-card" data-stock="false">
                 <span class="stock-indicator">Agotado</span>
                 <img src="../media/img/lager_beer.png" alt="Producto 2">
@@ -58,7 +60,7 @@
                 <p>Descripción breve del producto 2.</p>
             </article>
         </a>
-        <a href="productoTemplate.html" class="product-link">
+        <a href="productoTemplate.html" class="product-link" onclick="setStockValue('false')">
             <article class="product-card" data-stock="false">
                 <span class="stock-indicator">Agotado</span>
                 <img src="../media/img/ipa3_beer.png" alt="Producto 3">
@@ -66,7 +68,7 @@
                 <p>Descripción breve del producto 3.</p>
             </article>
         </a>
-        <a href="productoTemplate.html" class="product-link">
+        <a href="productoTemplate.html" class="product-link" onclick="setStockValue('false')">
             <article class="product-card" data-stock="false">
                 <span class="stock-indicator">Agotado</span>
                 <img src="../media/img/lager_beer.png" alt="Producto 4">
@@ -74,7 +76,7 @@
                 <p>Descripción breve del producto 4.</p>
             </article>
         </a>
-        <a href="productoTemplate.html" class="product-link">
+        <a href="productoTemplate.html" class="product-link" onclick="setStockValue('false')">
             <article class="product-card" data-stock="false">
                 <span class="stock-indicator">Agotado</span>
                 <img src="../media/img/lager_beer.png" alt="Producto 6">
@@ -82,7 +84,7 @@
                 <p>Descripción breve del producto 5.</p>
             </article>
         </a>
-        <a href="productoTemplate.html" class="product-link">
+        <a href="productoTemplate.html" class="product-link" onclick="setStockValue('true')">
             <article class="product-card" data-stock="true">
                 <span class="stock-indicator">En stock</span>
                 <img src="../media/img/ipa_beer.png" alt="Producto 5">
@@ -90,7 +92,7 @@
                 <p>Descripción breve del producto 6.</p>
             </article>
         </a>
-        <a href="productoTemplate.html" class="product-link">
+        <a href="productoTemplate.html" class="product-link" onclick="setStockValue('false')">
             <article class="product-card" data-stock="false">
                 <span class="stock-indicator">Agotado</span>
                 <img src="../media/img/lager_beer.png" alt="Producto 7">
@@ -98,7 +100,7 @@
                 <p>Descripción breve del producto 7.</p>
             </article>
         </a>
-        <a href="productoTemplate.html" class="product-link">
+        <a href="productoTemplate.html" class="product-link" onclick="setStockValue('true')">
             <article class="product-card" data-stock="true">
                 <span class="stock-indicator">En stock</span>
                 <img src="../media/img/zero_beer.png" alt="Producto 8">
@@ -106,7 +108,7 @@
                 <p>Descripción breve del producto 8.</p>
             </article>
         </a>
-        <a href="productoTemplate.html" class="product-link">
+        <a href="productoTemplate.html" class="product-link" onclick="setStockValue('false')">
             <article class="product-card" data-stock="false">
                 <span class="stock-indicator">Agotado</span>
                 <img src="../media/img/lager_beer.png" alt="Producto 9">
@@ -114,7 +116,7 @@
                 <p>Descripción breve del producto 9.</p>
             </article>
         </a>
-        <a href="productoTemplate.html" class="product-link">
+        <a href="productoTemplate.html" class="product-link" onclick="setStockValue('false')">
             <article class="product-card" data-stock="false">
                 <span class="stock-indicator">Agotado</span>
                 <img src="../media/img/lager_beer.png" alt="Producto 10">
@@ -122,7 +124,7 @@
                 <p>Descripción breve del producto 10.</p>
             </article>
         </a>
-        <a href="productoTemplate.html" class="product-link">
+        <a href="productoTemplate.html" class="product-link" onclick="setStockValue('true')">
             <article class="product-card" data-stock="true">
                 <span class="stock-indicator">En stock</span>
                 <img src="../media/img/radler_beer.png" alt="Producto 11">
@@ -130,7 +132,7 @@
                 <p>Descripción breve del producto 11.</p>
             </article>
         </a>
-        <a href="productoTemplate.html" class="product-link">
+        <a href="productoTemplate.html" class="product-link" onclick="setStockValue('false')">
             <article class="product-card" data-stock="false">
                 <span class="stock-indicator">Agotado</span>
                 <img src="../media/img/lager_beer.png" alt="Producto 12">

@@ -7,24 +7,21 @@ body {
     margin: 0; /* Asegura que el fondo cubra toda la página */
 }
 
-#header {
-    display: flex;
-    align-items: center;
+.press-section {
+    background-color: #e2dbdb;
     padding: 20px;
-    background-color: #f4f4f4;
-    border-bottom: 2px solid #ccc;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-/* Estilo para el título */
-.title {
-    font-family: 'AureaFont';
-    font-size: 1.6rem;
-    font-weight: bold;
-    color: #333;
-    margin-right: 50px;
+.press-section p {
+    color: #555;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
 }
 
-/* Sección de noticias */
 .news-section {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -58,65 +55,38 @@ body {
     color: #a04e3a;
     text-decoration: none;
     font-weight: bold;
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
 
 .news-card a:hover {
-    text-decoration: underline;
+    text-decoration: none;
+    font-size: 1.1rem;
 }
 
 .news-card:hover {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-/* Top Block (Notas de Interés) */
-.top-block {
-    background-color: #fff;
-    padding: 20px;
-    margin: 40px 0;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+.client-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Dos columnas de igual tamaño */
+    gap: 20px; /* Espaciado entre columnas */
+    align-items: start; /* Alinear elementos al inicio */
 }
 
-.top-block h2 {
-    font-size: 1.6rem;
-    margin-bottom: 20px;
-    color: #007bff;
-}
-
-.top-block ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.top-block ul li {
-    margin-bottom: 12px;
-}
-
-.top-block ul li a {
-    font-size: 1.1rem;
-    color: #007bff;
-    text-decoration: none;
-}
-
-.top-block ul li a:hover {
-    text-decoration: underline;
-}
-
-/* Main Content */
-.main-content {
-    display: flex;
-    justify-content: space-between;
-    margin: 20px;
+.client-content h2 {
+    font-family: 'AureaFont';
+    grid-column: span 2; /* El encabezado ocupa las dos columnas */
+    text-align: left; 
+    font-size: 1.7em; 
+    margin: 5px 5px 0 20px; 
 }
 
 .column {
-    width: 48%;
-}
-
-.column h2 {
-    font-size: 1.6rem;
-    margin-bottom: 20px;
-    color: #007bff;
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Espaciado entre comentarios */
+    margin: 20px;
 }
 
 .comment {
@@ -130,32 +100,9 @@ body {
 
 .comment p {
     font-size: 1rem;
-    margin: 0;
 }
 
 .comment strong {
     color: #a04e3a;
     font-size: 16px;
-}
-
-/* Estilo para la sección de prensa */
-.press-section {
-    background-color: #e2dbdb;
-    padding: 20px;
-    margin: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.press-section h2 {
-    font-size: 1.8em;
-    color: #333;
-    margin-bottom: 1rem;
-}
-
-.press-section p {
-    color: #555;
-    font-size: 1.1rem;
-    line-height: 1.6;
-    margin-bottom: 1rem;
 }

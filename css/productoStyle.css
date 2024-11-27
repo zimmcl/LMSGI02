@@ -1,13 +1,3 @@
-/* Configuración general */
-body {
-    font-family: 'Arial', sans-serif;
-    color: #333;
-    background-color: #f8f8f8;
-    margin: 0;
-    padding: 0;
-}
-
-/* Estructura principal */
 main {
     padding: 2rem;
     max-width: 900px;
@@ -17,7 +7,6 @@ main {
     border-radius: 8px;
 }
 
-/* Encabezado del producto */
 .product-header {
     display: flex;
     align-items: center;
@@ -26,7 +15,7 @@ main {
 }
 
 .product-thumbnail {
-    width: 180px;
+    width: 160px;
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
@@ -42,7 +31,6 @@ main {
     line-height: 1.5;
 }
 
-/* Galería de imágenes */
 .product-gallery h3 {
     font-size: 1.5rem;
     color: grey;
@@ -51,8 +39,8 @@ main {
 
 .gallery-images {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 0.5rem;
 }
 
 .gallery-images img {
@@ -63,10 +51,9 @@ main {
 }
 
 .gallery-images img:hover {
-    transform: scale(1.05);
+    transform: scale(1.10);
 }
 
-/* Detalles del producto */
 .product-details {
     display: flex;
     flex-wrap: wrap;
@@ -111,13 +98,12 @@ main {
 }
 
 .product-ingredients ul li::before {
-    content: '•';
+    content: '🍺';
     position: absolute;
     left: 0;
     color: #e76f51;
 }
 
-/* Botón añadir al carrito */
 .product-action {
     text-align: center;
     margin-top: 2rem;
@@ -129,9 +115,9 @@ main {
     border: none;
     padding: 0.8rem 2rem;
     font-size: 1rem;
-    border-radius: 8px;
+    border-radius: 30px;
     cursor: pointer;
-    transition: background 0.3s;
+    transition: transform 0.3s ease;
 }
 
 .add-to-cart:hover {

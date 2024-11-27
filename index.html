@@ -24,7 +24,6 @@
 </head>
 
 <body>
-
     <nav class="navbar">
         <div class="navbar-logo">
             <a href="index.html">
@@ -37,6 +36,11 @@
             <li><a href="pages/prensa.html">Prensa</a></li>
             <li><a href="pages/contacto.html">Contacto</a></li>
         </ul>
+        <div class="navbar-download">
+            <a href="files/zimmel_ceccon_ezequiel_jose_LMSGI02_TareaEvaluativa01.pdf" download>
+                <img src="media/img/descarga_icon.png" alt="Descargar Catálogo" class="download-icon">
+            </a>
+        </div>
     </nav>
 
     <video autoplay muted loop preload id="video_background" type="video/mp4">
@@ -44,6 +48,7 @@
         Tu navegador no soporta el video.
     </video>
 
+    <!--Se utiliza bootstrap para el slider. Tanto estilos como dinamismo se obtiene de los ficheros .css y .js propios de la librería -->
     <div class="index-content">
         <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
             <div class="carousel-inner">
@@ -92,15 +97,12 @@
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
                 data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
             </button>
             <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
                 data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
             </button>
         </div>
-
 
         <div class="mt-5">
             <div class="row">
@@ -122,9 +124,7 @@
                         <div class="col-md-6">
                             <a href="pages/productoA.html" class="product-link">
                                 <div class="product-card">
-                                    <div class="image-container">
-                                        <img src="media/img/stout_beer.png" alt="Producto 1">
-                                    </div>
+                                    <img src="media/img/stout_beer.png" alt="Producto 1">
                                     <div class="card-body">
                                         <h5 class="card-title">Aurea Stout x4</h5>
                                         <p class="card-text">Precio: 3.50 €</p>
@@ -134,15 +134,15 @@
                         </div>
                         <!-- Tarjeta Producto 2 -->
                         <div class="col-md-6">
-                            <div class="product-card">
-                                <div class="image-container">
+                            <a href="pages/productoTemplate.html" class="product-link">
+                                <div class="product-card">
                                     <img src="media/img/ipa_beer.png" alt="Producto 2">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Aurea IPA x8</h5>
+                                        <p class="card-text">Precio: 5.85 €</p>
+                                    </div>
                                 </div>
-                                <div class="card-body">
-                                    <h5 class="card-title">Aurea IPA x8</h5>
-                                    <p class="card-text">Precio: 5.85 €</p>
-                                </div>
-                            </div>
+                            </a>
                         </div>
                     </div>
 
@@ -150,27 +150,27 @@
                     <div class="row">
                         <!-- Tarjeta Producto 3 -->
                         <div class="col-md-6">
-                            <div class="product-card">
-                                <div class="image-container">
+                            <a href="pages/productoTemplate.html" class="product-link">
+                                <div class="product-card">
                                     <img src="media/img/zero_beer.png" alt="Producto 3">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Aurea Zero x6</h5>
+                                        <p class="card-text">Precio: 5.50 €</p>
+                                    </div>
                                 </div>
-                                <div class="card-body">
-                                    <h5 class="card-title">Aurea Zero x6</h5>
-                                    <p class="card-text">Precio: 5.50 €</p>
-                                </div>
-                            </div>
+                            </a>
                         </div>
                         <!-- Tarjeta Producto 4 -->
                         <div class="col-md-6">
-                            <div class="product-card">
-                                <div class="image-container">
+                            <a href="pages/productoTemplate.html" class="product-link">
+                                <div class="product-card">
                                     <img src="media/img/radler_beer.png" alt="Producto 4">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Aurea Radler x6</h5>
+                                        <p class="card-text">Precio: 5.00 €</p>
+                                    </div>
                                 </div>
-                                <div class="card-body">
-                                    <h5 class="card-title">Aurea Radler x6</h5>
-                                    <p class="card-text">Precio: 5.00 €</p>
-                                </div>
-                            </div>
+                            </a>
                         </div>
                     </div>
                 </div>
