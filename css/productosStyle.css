@@ -12,6 +12,23 @@ h1 {
     font-size: 2rem;
 }
 
+#header {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-bottom: 2px solid #ccc;
+}
+
+/* Estilo para el título */
+.title {
+    font-family: 'AureaFont';
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #333;
+    margin-right: 50px;
+}
+
 .product-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr); /*4 productos por fila*/

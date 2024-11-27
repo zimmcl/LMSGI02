@@ -45,6 +45,7 @@ main {
 /* Galería de imágenes */
 .product-gallery h3 {
     font-size: 1.5rem;
+    color: grey;
     margin-bottom: 1rem;
 }
 
@@ -71,10 +72,17 @@ main {
     flex-wrap: wrap;
     gap: 2rem;
     margin-bottom: 2rem;
+    margin-top: 1rem;
 }
 
 .product-description {
     flex: 2;
+}
+
+.product-description h3 {
+    font-size: 1.6rem;
+    flex: 2;
+    color: grey;
 }
 
 .product-ingredients {
@@ -82,6 +90,12 @@ main {
     background: #f9f9f9;
     padding: 1rem;
     border-radius: 8px;
+}
+
+.product-ingredients h3 {
+    font-size: 1.6rem;
+    flex: 2;
+    color: grey;
 }
 
 .product-ingredients ul {
@@ -100,7 +114,7 @@ main {
     content: '•';
     position: absolute;
     left: 0;
-    color: #007bff;
+    color: #e76f51;
 }
 
 /* Botón añadir al carrito */
@@ -110,7 +124,7 @@ main {
 }
 
 .add-to-cart {
-    background: #007bff;
+    background: #f0a500;
     color: white;
     border: none;
     padding: 0.8rem 2rem;
@@ -121,5 +135,5 @@ main {
 }
 
 .add-to-cart:hover {
-    background: #0056b3;
+    background: #e76f51;
 }
