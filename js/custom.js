@@ -13,3 +13,14 @@ window.onload = function() {
         button.style.cursor = "not-allowed";
     } 
 };
+
+
+function openDisclaimer() {
+    document.getElementById("disclaimerPopup").style.display = "block";
+    document.getElementById("overlay").style.display = "block";
+}
+
+function closeDisclaimer() {
+    document.getElementById("disclaimerPopup").style.display = "none";
+    document.getElementById("overlay").style.display = "none";
+}

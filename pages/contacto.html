@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="../css/footerStyle.css">
     <link rel="stylesheet" href="../css/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="../css/bootstrap/bootstrap-icons-1.11.3/font/bootstrap-icons.css">
+    <script src="../js/custom.js" defer></script>
     <title>Experiencia</title>
 </head>
 
@@ -102,7 +103,7 @@
                     <li><a href="https://x.com/?lang=es" target="_blank"><i class="bi bi-twitter-x"></i></a></li>
                     <li><a href="https://www.instagram.com/" target="_blank"><i class="bi bi-instagram"></i></a></li>
                 </ul>
-                <p>&copy; 2024 Aurea. Todos los derechos reservados.</p>
+                <p>&copy; 2024 Aurea. <a href="#" onclick="openDisclaimer()" style="text-decoration:none; color: gray; font-size: 1.1rem;">Aviso Legal</a></p>
             </div>
 
             <!-- Sección Derecha -->
@@ -114,6 +115,29 @@
                     <button type="submit">Suscribirse</button>
                 </form>
             </div>
+
+            <!-- Popup Disclaimer -->
+            <div id="disclaimerPopup"
+                style="display:none; position:fixed; top:50%; left:50%; transform:translate(-50%, -50%); 
+                        background-color:white; padding:20px; border:1px solid #888; box-shadow:0 4px 8px rgba(0,0,0,0.2); z-index:1000;">
+                <h2>Aviso Legal</h2>
+                <p>
+                    Todos los recursos, imágenes, videos, marcas y contenidos utilizados en este sitio web son propiedad
+                    de sus respectivos dueños
+                    y están protegidos por derechos de autor. Su uso aquí tiene únicamente fines educativos y
+                    académicos, sin intención de lucro
+                    ni de infringir derechos de propiedad intelectual. Si usted es titular de algún contenido presentado
+                    y desea que sea eliminado
+                    o modificado, por favor contáctenos para atender su solicitud de manera oportuna.
+                </p>
+                <button onclick="closeDisclaimer()" style="margin-top:10px; padding:10px 20px;">Cerrar</button>
+            </div>
+
+            <!-- Overlay -->
+            <div id="overlay"
+                style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.5); z-index:999;"
+                onclick="closeDisclaimer()"></div>
+
         </div>
     </footer>
 
