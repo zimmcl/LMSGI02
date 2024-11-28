@@ -1,0 +1,61 @@
+/* Estilos para el Popup Disclaimer */
+#disclaimerPopup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px 30px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    width: 80%;
+    max-width: 600px;
+    line-height: 1.6;
+}
+
+#disclaimerPopup h2 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 1.6em;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+#disclaimerPopup p {
+    color: #333;
+    text-align: left;
+    margin-bottom: 10px;
+    font-size: 1em;
+}
+
+#disclaimerPopup p strong {
+    font-weight: bold;
+    color: #007bff;
+}
+
+#disclaimerPopup button {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 25px;
+    font-size: 1em;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Estilos para el overlay */
+#overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}

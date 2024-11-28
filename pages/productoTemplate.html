@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Detalle del Producto</title>
+    <link rel="stylesheet" href="../css/disclaimerStyle.css">
     <link rel="stylesheet" href="../css/customCSS.css">
     <link rel="stylesheet" href="../css/productoStyle.css">
     <link rel="stylesheet" href="../css/navStyle.css">
@@ -108,26 +109,31 @@
             </div>
 
             <!-- Popup Disclaimer -->
-            <div id="disclaimerPopup"
-                style="display:none; position:fixed; top:50%; left:50%; transform:translate(-50%, -50%); 
-                        background-color:white; padding:20px; border:1px solid #888; box-shadow:0 4px 8px rgba(0,0,0,0.2); z-index:1000;">
+            <div id="disclaimerPopup">
                 <h2>Aviso Legal</h2>
                 <p>
-                    Todos los recursos, imágenes, videos, marcas y contenidos utilizados en este sitio web son propiedad
-                    de sus respectivos dueños
-                    y están protegidos por derechos de autor. Su uso aquí tiene únicamente fines educativos y
-                    académicos, sin intención de lucro
-                    ni de infringir derechos de propiedad intelectual. Si usted es titular de algún contenido presentado
-                    y desea que sea eliminado
-                    o modificado, por favor contáctenos para atender su solicitud de manera oportuna.
+                    Los recursos, imágenes, videos, marcas y contenidos utilizados en este sitio web provienen de
+                    diferentes fuentes y son propiedad de sus respectivos dueños, protegidos por derechos de autor.
                 </p>
-                <button onclick="closeDisclaimer()" style="margin-top:10px; padding:10px 20px;">Cerrar</button>
+                <p>
+                    Los siguientes elementos contienen información extraída de otras fuentes:
+                </p>
+                <p>- La página <strong>index.html</strong> contiene video extraído de
+                    <strong>https://www.youtube.com/@enologiaybiotecnologiadela980</strong>.
+                </p>
+                <p>- La página <strong>cultura.html</strong> incluye datos e imágenes de
+                    <strong>https://www.mahou-sanmiguel.com/es-es/cultura-cervecera#historia</strong>.</p>
+                <p>
+                    El uso de estos materiales tiene exclusivamente fines educativos y académicos, sin intención de
+                    lucro ni de infringir derechos de propiedad intelectual. Si usted es titular de algún contenido
+                    presentado y desea que sea eliminado o modificado, por favor contáctenos para atender su solicitud
+                    de manera oportuna.
+                </p>
+                <button onclick="closeDisclaimer()">Cerrar</button>
             </div>
 
             <!-- Overlay -->
-            <div id="overlay"
-                style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.5); z-index:999;"
-                onclick="closeDisclaimer()"></div>
+            <div id="overlay" onclick="closeDisclaimer()"></div>
 
         </div>
     </footer>
